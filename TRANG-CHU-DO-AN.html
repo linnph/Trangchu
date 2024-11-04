@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDLTRAVEL - Khám Phá Thế Giới</title>
+    <link rel="stylesheet" href="trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span style="color: red;">L</span>
+                <span style="color: blue;">D</span>
+                <span style="color: green;">L</span>
+                <span style="color: orange;">TRAVEL</span>
+            </div>
+            <ul>
+                <li><a href="file:///C:/Users/Admin/Desktop/code%20web/TRANG%20CHU%20DO%20AN.html">Trang Chủ</a></li>
+                <li><a href="file:///C:/Users/Admin/Desktop/code%20web/trang%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20%C4%91%E1%BB%93%20%C3%A1n.html">Giới Thiệu</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="banner">
+        <img src="./imgs/danang.jpg" class="active"alt="Image 1">
+            <div class="centered-text">KHÁM PHÁ MỌI NƠI CÙNG LDL TRAVEL</div>
+        <img src="./imgs/hoian.jpg" alt="Image 2">
+            <div class="centered-text">KHÁM PHÁ MỌI NƠI CÙNG LDL TRAVEL</div>
+        <img src="./imgs/muine.jpg" alt="Image 3">
+            <div class="centered-text">KHÁM PHÁ MỌI NƠI CÙNG LDL TRAVEL</div>
+        <img src="./imgs/nhatrang.jpg" alt="Image 4">
+        <div class="centered-text">KHÁM PHÁ MỌI NƠI CÙNG LDL TRAVEL</div>
+
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.banner img');
+        const totalImages = images.length;
+
+        function changeImage() {
+
+            images[currentIndex].classList.remove('active');
+
+            currentIndex = (currentIndex + 1) % totalImages;
+
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(changeImage, 3000);
+    </script>
+    <div class="footer">
+
+        <div class="container">
+            <div class="stylefont">
+                <u><h2>Điểm đến ưa thích</h2></u>
+            </div>
+            <div class="destination-list">
+
+                <div class="destination">
+                    <img src="./imgs/hoian.jpg" alt="Hội An">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="" ><h3>Hội An</h3></a>
+                            <p>4 tour</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination">
+                    <img src="./imgs/vinhhalong.jpg" alt="Vịnh Hạ Long">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href=""><h3>Vịnh Hạ Long</h3></a>
+                            <p>7 tour</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination">
+                    <img src="./imgs/muine.jpg" alt="Mũi Né">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href=""><h3>Mũi Né</h3></a>
+                            <p>3 tour</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination">
+                    <img src="./imgs/nhatrang.jpg"
+                        alt="Nha Trang">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href=""><h3>Nha Trang</h3></a>
+                            <p>2 tour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+        <div class="contener">
+            <div class="content">
+
+                <div class="text-content">
+                    <h1 style="font-size: 37px;">Hãy đồng hành cùng 
+                        <span style="color: red;">L</span>
+                        <span style="color: blue;">D</span>
+                        <span style="color: green;">L</span>
+                        <span style="color: orange;">TRAVEL</span></h1>
+                    <p><i class="fas fa-heart"></i> Sự hài lòng của khách hàng</p>
+                    <p><i class="fas fa-thumbs-up"></i> Đặt tour dễ dàng nhanh chóng</p>
+                    <p><i class="fas fa-gift"></i> Nhiều ưu đãi đặc biệt hấp dẫn</p>
+                </div>
+        
+                <div class="image-content">
+                    <img src="./imgs/people.webp" alt="LDLTravel" style="height:700px;width:700px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <p>Email: <a href="email-to:ldltravel@gmail.com">ldltravel@gmail.com</a></p>
+            <p>Địa chỉ: Chung cư Vinh Trung, Phường Trung Đô, Thành Phố Vinh, Nghệ An</p>
+            <p>Điện thoại: <a href="tel:+84384846811">(+84) 384 846 811</a></p>
+    
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100040783291180"><img src="https://img.icons8.com/?size=48&id=13912&format=png" alt="Facebook"></a>
+                <a href="link"><img src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png" alt="Instagram"></a>
+                <a href="link"><img src="https://img.icons8.com/?size=48&id=19318&format=png" alt="YouTube"></a>
+                <a href="link"><img src="https://img.icons8.com/?size=100&id=118638&format=png&color=000000" alt="tiktok"></a>
+            </div>
+    
+            <div class="footer">
+                <p>Copyright © LDLTravel 2024. All rights reserved.</p>
+            </div>
+        </div>
+        
+</body>
+</html>
